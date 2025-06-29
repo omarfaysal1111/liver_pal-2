@@ -344,7 +344,7 @@ class _LiverFunctionScreenState extends State<LiverFunctionScreen> {
     final pickedFile = await picker.pickImage(source: ImageSource.gallery);
 
     if (pickedFile != null) {
-      var uri = Uri.parse('http://10.0.2.2:8000/predict/image');
+      var uri = Uri.parse('http://168.231.124.22:8000/predict/image');
       var request = http.MultipartRequest('POST', uri);
 
       Uint8List bytes = await pickedFile.readAsBytes();

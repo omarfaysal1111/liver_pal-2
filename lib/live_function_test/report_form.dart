@@ -81,7 +81,7 @@ class _LiverFunctionDataFormState extends State<LiverFunctionDataForm> {
                     var request = http.Request(
                       'POST',
                       Uri.parse(
-                        'http://10.0.2.2:8000/predict/tabular',
+                        'http://168.231.124.22:8000/predict/tabular',
                       ), // or use local IP if on device
                     );
 
